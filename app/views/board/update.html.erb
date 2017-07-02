@@ -1,0 +1,21 @@
+
+<h1 style="text-align:center">수정 게시판</h1>
+
+<div class="container">
+<form action="/board/update_ok/<%=@one_post.id%>" method="POST">
+  <div class="form-group">
+    <label>제목</label>
+    <input type="text" class="form-control" id="title" name="title" value="<%=@one_post.title%>">
+  </div>
+  <div class="form-group">
+    <label>글쓴이</label>
+    <input type="text" class="form-control" id="writer" name="writer" value="<%=@one_post.writer%>">
+  </div>
+  <div class="form-group">
+    <label>내용</label>
+    <textarea class="form-control" rows="10" name="content"><%=@one_post.content%></textarea>
+  </div>
+  
+  <button type="submit" class="btn btn-default">등록</button>
+</form>
+</div>

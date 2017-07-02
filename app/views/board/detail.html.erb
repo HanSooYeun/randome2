@@ -1,0 +1,9 @@
+<h1>detail page</h1>
+
+<%=@one_post.title%>
+<%=@one_post.content%>
+<%=@one_post.writer%>
+
+<a href="/board/delete/<%=@one_post.id%>">삭제</a>
+
+<a href="/board/update/<%=@one_post.id%>">수정</a>
